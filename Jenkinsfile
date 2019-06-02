@@ -1,10 +1,2 @@
-library(
-  identifier: 'jenkins-shared-library'
-  retriever: modernSCM(
-    [
-      $class: 'GitSCMSource',
-      remote: 'https://github.com/ShylaGit/jenkins-shared-library.git'
-    ]
-  )
-)}
-validateVariable()
+properties([parameters([choice(choices: ['stage1', 'stage2', 'stage3'], description: '', name: 'secret_name')])])
+validateVariable(params.secret_name)
