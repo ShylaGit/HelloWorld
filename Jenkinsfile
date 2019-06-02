@@ -6,5 +6,5 @@ library(
       remote: 'https://github.com/ShylaGit/jenkins-shared-library.git'
     ]
   )
-)}
+)
 validateVariable()
